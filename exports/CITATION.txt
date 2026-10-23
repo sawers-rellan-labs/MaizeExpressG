@@ -1,0 +1,10 @@
+Source of the expression data in this folder - please cite:
+
+Wang L, Czedik-Eysenberg A, Mertz RA, Si Y, Tohge T, Nunes-Nesi A, Arrivault S, Dedow LK, Bryant DW, Zhou W, Xu J, Weissmann S, Studer A, Li P, Zhang C, LaRue T, Shao Y, Ding Z, Sun Q, Patel RV, Turgeon R, Zhu X, Provart NJ, Mockler TC, Fernie AR, Stitt M, Liu P, Brutnell TP (2014) Comparative analyses of C4 and C3 photosynthesis in developing leaves of maize and rice. Nature Biotechnology 32(11):1158-1165. doi:10.1038/nbt.3019. PMID 25306245.
+
+maize_GEO_FPKM_by_library_v5.csv: GEO GSE54274 (GSE54274_maize_leaf_section_fpkm.txt.gz)
+maize_SuppTable13_RPKM_v5.csv, maize_UDM_v5.csv: Supplementary Table 13 of the paper
+
+B73 v5 IDs: MaizeGDB v3-to-v5 cross-reference (https://download.maizegdb.org/Pan-genes/B73_gene_xref/),
+plus position-based matches from Ensembl Plants assembly chain files and MaizeGDB Zm00001eb.1 gene models
+(scripts/04_liftover_v3_to_v5.R). Annotation: MaizeGDB AGPv3 gene data and UniProt ProtNLM names.
