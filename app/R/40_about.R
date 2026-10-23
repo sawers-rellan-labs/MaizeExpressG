@@ -99,6 +99,10 @@ about_page <- function() {
       tags$li("Genome-wide screens use ordinary least squares on transformed FPKM for every gene with ",
               "Benjamini-Hochberg FDR. This is fast and transparent but is not a count-based model (edgeR/DESeq2/limma-voom); ",
               "use it to explore and rank genes.")),
+    h4("Source code"),
+    p(HTML(paste0(ext_link("github.com/sawers-rellan-labs/MaizeExpressG",
+                           "https://github.com/sawers-rellan-labs/MaizeExpressG"), " (MIT license for the code; ",
+                  "data remain under their original sources, cited above)."))),
     h4("Rebuilding the data"),
     tags$pre("Rscript scripts/01_download_data.R\nRscript scripts/02_build_app_data.R"),
     p(class = "text-muted small", "Data file built ", LG$info$built, ".")

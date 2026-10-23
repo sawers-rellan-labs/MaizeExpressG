@@ -7,6 +7,9 @@ developmental gradients from
 > photosynthesis in developing leaves of maize and rice. *Nature Biotechnology* 32:1158–1165.
 > [doi:10.1038/nbt.3019](https://doi.org/10.1038/nbt.3019) · GEO [GSE54274](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE54274)
 
+**Live app:** https://01a16957-4704-509d-4e2f-79286c6feb32.share.connect.posit.cloud/ (Posit Connect Cloud) ·
+**Code:** https://github.com/sawers-rellan-labs/MaizeExpressG
+
 ## Citation
 
 All expression, ortholog and metabolite data in this app were downloaded from the supplementary
@@ -55,6 +58,13 @@ Rscript run_app.R
 ```
 
 Or, from R/RStudio in this folder: `shiny::runApp("app")`.
+
+To redeploy to Posit Connect Cloud after changes (account `gemmalab`):
+
+```r
+rsconnect::deployApp("app", appName = "maizeexpressg", appTitle = "MaizeExpressG",
+                     server = "connect.posit.cloud", account = "gemmalab")
+```
 You need the R packages shiny, bslib, plotly, DT and ggplot2 (`run_app.R` installs any that are missing).
 The processed data (`app/data/leafgrad.rds`, 21 MB) is already built. To rebuild it from the original sources:
 
